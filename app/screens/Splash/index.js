@@ -7,8 +7,10 @@ import {globalStyles, imgLogo} from '../../assets';
 import {ImageBackground} from '../../components';
 import styles from './styles';
 import {setClientToken} from '../../services/APIKit';
+import {initialApp} from '../../utils';
 
 const Splash = ({navigation}) => {
+  console.log('+++ initialApp', initialApp());
   const authState = useSelector((state) => state.auth);
   useEffect(async () => {
     function checkLogedIn() {

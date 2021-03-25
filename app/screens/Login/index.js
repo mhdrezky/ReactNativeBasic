@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {useDispatch, useSelector} from 'react-redux';
 import FlashMessage, {showMessage} from 'react-native-flash-message';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import {FilledButton, Input, LinearBackground, Loading} from '../../components';
 import styles from './styles';
 import {authActions} from '../../actions';
@@ -45,6 +46,7 @@ const Login = ({navigation}) => {
   return (
     <LinearBackground>
       <SafeAreaView style={globalStyles.safeArea}>
+        <MaterialIcon size={25} name="menu" color="white" />
         <View style={styles.logoContainer}>
           <Image
             source={imgLogoWhite}
